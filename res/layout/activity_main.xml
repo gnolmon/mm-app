@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lc.zalochat.MainActivity" >
+
+    
+    <ImageView
+        android:id="@+id/imLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_below="@id/imLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textColor="@color/maincolor"
+        android:textSize="40px"
+        android:textStyle="bold" />
+
+    
+
+    <TextView
+        android:id="@+id/tvTerm"
+        android:layout_width="wrap_content"
+        android:layout_height="600px"
+        android:layout_below="@id/tvtitle"
+        android:background="@color/feed_bg"
+        android:scrollbars="vertical"
+        android:text="@string/term"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/btnAgree"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvTerm"
+        android:layout_margin="20px"
+        android:background="@drawable/button_background"
+        android:text="ĐỒNG Ý TẢI VÀ CÀI ĐẶT"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_edit" />
+
+    <TextView
+        android:id="@+id/tvSuggest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAgree"
+        android:layout_margin="20px"
+        android:text="@string/suggest"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvSuggest"
+        android:layout_margin="20px"
+        android:background="@drawable/button_background"
+        android:text="THOÁT"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_edit" />
+
+</RelativeLayout>

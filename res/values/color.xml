@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- BASE COLOR -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="title">#474747</color>
+    <color name="red">#FF0000</color>
+    <color name="gray_dark">#808080</color>
+    <color name="gray_light">#C0C0C0</color>
+    <color name="gray_bg">#999999</color>
+    <color name="blue_light">#0000FF</color>
+    <color name="blue_dark">#0000A0</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="orange">#FF8040</color>
+    <color name="green_yellow">#ADFF2F</color>
+    <color name="trans">#00000000</color>
+    <color name="pink">#ff2d2d</color>
+    <color name="gray">#3EA99F </color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="press_button">#1E9B67</color>
+    <color name="normal_button">#7dba9b</color>
+    <color name="normal_edittext">#459e74</color>
+    <color name="floating_button">#ed7d31</color>
+    <color name="green">#00FF00</color>
+    <color name="tab_selected">#00b169</color>
+    <color name="thumbColor">#66aaaaaa</color>
+    <color name="blur">#9cc3e5</color>
+    <color name="canvas">#FFFFFF</color>
+    <color name="actionbar">#26c281</color>
+    <color name="actionbar_search">#29cf8a</color>
+    <color name="maincolor">#26c281</color>
+    <color name="maincolor_light">#2ad58e</color>
+    <color name="maincolor_shadow">#00b169</color>
+    <color name="like_comment">#B2B2B2</color>
+    <color name="background_gray">#999999</color>
+    <color name="list_divider">#b5b5b5</color>
+    <color name="divider_tab_bottom">#93e1c0</color>
+    <color name="divider_top">#b5b5b5</color>
+    <color name="dark_slate_gray">#2F4F4F</color>
+
+</resources>
