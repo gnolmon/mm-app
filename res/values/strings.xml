@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">UCWeb</string>
-    <string name="title">UCWeb 2016</string>
+    <string name="app_name">HotClip</string>
+    <string name="title">HotClip 2016</string>
     <string name="action_settings">Settings</string>
     <string name="suggest">Gợi ý: Sử dụng wifi để giảm cước 3G!</string>
     <string name="term">Điều khoản và điều kiện sự dụng

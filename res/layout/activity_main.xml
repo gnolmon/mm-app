@@ -11,10 +11,10 @@
     
     <ImageView
         android:id="@+id/imLogo"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo" />
+        android:src="@drawable/anh1" />
     <TextView
         android:id="@+id/tvtitle"
         android:layout_below="@id/imLogo"
@@ -30,7 +30,7 @@
     <TextView
         android:id="@+id/tvTerm"
         android:layout_width="wrap_content"
-        android:layout_height="600px"
+        android:layout_height="300px"
         android:layout_below="@id/tvtitle"
         android:background="@color/feed_bg"
         android:scrollbars="vertical"
@@ -44,7 +44,7 @@
         android:layout_below="@id/tvTerm"
         android:layout_margin="20px"
         android:background="@drawable/button_background"
-        android:text="ĐỒNG Ý TẢI VÀ CÀI ĐẶT"
+        android:text="ĐỒNG Ý TẢI VÀ XEM HOTCLIP"
         android:textColor="@color/white"
         android:textSize="@dimen/size_edit" />
 
